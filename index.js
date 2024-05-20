@@ -71,19 +71,51 @@ container_for_square_icon.addEventListener("click", ()=> {
   rec_2.classList.toggle("click");
 });
 //---------------------------------------------------
-//rotating abou us arrow
-let labels = document.querySelectorAll(".center3 label");
+//rotating about us arrow and accordion
+let center3 = document.querySelectorAll(".center3 label");
 
-
-labels.forEach(label => {
-
-  let span = label.querySelector(".center3 label span");
-  
+center3.forEach(label => {
   label.addEventListener("click", () => {
-    span.classList.toggle("click");
-    label.classList.toggle("click");
+    let span = label.querySelector("span");
+    let cont2 = document.querySelector("#cont2");
+    let cont1 = document.querySelector("#cont1");
+    let cont3 = document.querySelector("#cont3");
+    let cont4 = document.querySelector("#cont4");
+    let label1 = document.querySelector('label[for="first"]');
+    let label2 = document.querySelector('label[for="second"]');
+    let label3 = document.querySelector('label[for="third"]');
+    let label4 = document.querySelector('label[for="fourth"]');
+
+    if (label === label1) {
+      cont1.classList.toggle("click");
+      span.classList.toggle("click");
+      label1.classList.toggle("click");
+    } 
+    else if (label === label2) {
+      cont2.classList.toggle("click");
+      span.classList.toggle("click");
+      label2.classList.toggle("click");
+    }
+    else if (label === label3) {
+      cont3.classList.toggle("click");
+      span.classList.toggle("click");
+      label3.classList.toggle("click");
+    }
+    else  {
+      cont4.classList.toggle("click");
+      span.classList.toggle("click");
+      label4.classList.toggle("click");
+    }
+   
   });
 });
+  
+  
+    
+
+   
+
+
 
 //-----------------------------------
 //scrolling effect animation

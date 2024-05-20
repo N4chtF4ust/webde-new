@@ -741,12 +741,6 @@ body{
 
 .rectangle-background3{
 
-
-  
-  
-  /*background-color: rgba(0, 0, 0, 0.63);
-  backdrop-filter: blur(10px) ;*/
-
   border-top: 3px solid white;
   border-bottom: 3px solid white;
  
@@ -754,18 +748,11 @@ body{
   flex-direction: column;
   width: 90vw;
   height: 90vh; 
- 
-  /*border-radius: 40px; */
-
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-
   color: white;
-
-  
-  
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -781,26 +768,18 @@ body{
   position: relative;
   width: 40%;
   height: 90%;
- /* background-color: #a70000;*/
   display: flex;
   flex-direction: column;
   gap: 1%;
-  
   justify-content: center;
 }
 
 .center3 p{
-
   font-family: "Source Sans 3", sans-serif;
   font-weight: bold;
-
-
   font-size: 1.4vh;
-
   text-shadow: 1px 1px 1px black;
-
   color: white ;
-
 }
 
 .center3 label:hover{
@@ -811,23 +790,19 @@ body{
   background-color: #da1b3d;
 }
 
-
-
-.center3 input[type="checkbox"]{
- display: none;
-}
-
 .center3 label, .center3 input{
-  
- 
   border: 2px solid black;
   color: black;
-
-
 }
 
-#cont{
+#cont1,#cont2,#cont3,#cont4{
   border: 2px solid white;
+  padding: 1vw;
+  padding: 0 1vw;
+  max-height: 0;
+  overflow: hidden;
+  transition:  0.5s;
+  font-size: smaller;
 }
 
 .center3 label{
@@ -837,44 +812,30 @@ body{
   justify-content: space-between;
   cursor: pointer;
   font-size: 2vh;
-
- 
-  
+  overflow: hidden;
 }
 
-.center3 label span.click {
+.center3 label[for="first"] span.click,
+.center3 label[for="second"] span.click,
+.center3 label[for="third"] span.click,
+.center3 label[for="fourth"] span.click{
   transform: rotate(270deg);
+  
+
 }
 
 
 .center3 label span{
 transform: rotate(90deg);
-transition:  0.5s;
+transition: .5s ease-in-out;
 }
 
-
-
-
-
-#cont{
-  padding: 1vw;
-  padding: 0 1vw;
-  max-height: 0;
-  overflow: hidden;
-  transition:  0.5s;
-  font-size: smaller;
-
-  
-
-}
-
-.center3 input[type="checkbox"]:checked + #cont{
+#cont1.click,
+#cont2.click,
+#cont3.click,
+#cont4.click {
   max-height: 20vh;
-
 }
-
-
-
 
 
 /*---------------------*/

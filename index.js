@@ -55,12 +55,12 @@ gmail.addEventListener("click", function() {
 
 //button for square icon  
 //---------------------------------------------------
-const container_for_square_icon = document.querySelector(".container-for-square-icon");
-const nav_header = document.querySelector(".nav_header");
-const square_icon = document.querySelector(".square-icon");
-const rec_1 = document.querySelector(".rec-1");
-const rec_3 = document.querySelector(".rec-3");
-const rec_2 = document.querySelector(".rec-2");
+let container_for_square_icon = document.querySelector(".container-for-square-icon");
+let nav_header = document.querySelector(".nav_header");
+let square_icon = document.querySelector(".square-icon");
+let rec_1 = document.querySelector(".rec-1");
+let rec_3 = document.querySelector(".rec-3");
+let rec_2 = document.querySelector(".rec-2");
 
 container_for_square_icon.addEventListener("click", ()=> {
   container_for_square_icon.classList.toggle("click");
@@ -71,15 +71,17 @@ container_for_square_icon.addEventListener("click", ()=> {
   rec_2.classList.toggle("click");
 });
 //---------------------------------------------------
-const labels = document.querySelectorAll(".center3 label");
+//rotating abou us arrow
+let labels = document.querySelectorAll(".center3 label");
 
 
 labels.forEach(label => {
 
-  const span = label.querySelector(".center3 label span");
+  let span = label.querySelector(".center3 label span");
   
   label.addEventListener("click", () => {
     span.classList.toggle("click");
+    label.classList.toggle("click");
   });
 });
 
@@ -114,6 +116,9 @@ window.addEventListener('scroll', () => {
 
 
 });
+
+
+
 
 
 

@@ -163,6 +163,7 @@ body{
 
   .welcome h6{
     color: black;
+    
   }
 
 .right_container{
@@ -325,10 +326,12 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
+    
     position: absolute;
     bottom: 5%;
     height: 10%;
     gap: 10%;
+    
   }
     .footer img{
       height: 40%;
@@ -782,8 +785,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 1%;
-  overflow-y: auto;
-  overflow-x:hidden;
+  
   justify-content: center;
 }
 
@@ -793,13 +795,23 @@ body{
   font-weight: bold;
 
 
-  font-size: 1.6vh;
+  font-size: 1.4vh;
 
   text-shadow: 1px 1px 1px black;
 
   color: white ;
 
 }
+
+.center3 label:hover{
+  background-color: #da1b3d;
+}
+
+.center3 label.click  {
+  background-color: #da1b3d;
+}
+
+
 
 .center3 input[type="checkbox"]{
  display: none;
@@ -963,15 +975,17 @@ transition:  0.5s;
 
 .location2{
     
-    width: 90%;
+    width: 90vw;
     height: 95%;
-    border-radius: 15px;
+    
 }
 
 
 /*Responsive*/
 
 @media screen and (max-width: 768px )  {
+
+
 
   /*Homepage*/
   .left_container{

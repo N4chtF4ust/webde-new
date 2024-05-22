@@ -171,7 +171,7 @@ body{
   transition: .5s ease-in-out;
 }
 
-.Homepage,.Menu_list, .About_us, .Location{
+#Homepage,#Menu_list, #About_us, #Location{
   justify-content: center;
   width: 97%;
   display: flex;
@@ -205,9 +205,9 @@ body{
   z-index: 1;
   }
 
-.container-for-square-icon.click:hover .rec-1.click , 
-.container-for-square-icon.click:hover .rec-3.click,
-.container-for-square-icon.click:hover .rec-2.click {
+.container-for-square-icon.click:hover #rec-1.click , 
+.container-for-square-icon.click:hover #rec-3.click,
+.container-for-square-icon.click:hover #rec-2.click {
   background-color: #da1b3d;
 }
 
@@ -215,35 +215,34 @@ body{
   right: 0;
 }
 
-.Homepage:hover,.Menu_list:hover, .About_us:hover, .Location:hover{
+#Homepage:hover,#Menu_list:hover, #About_us:hover, #Location:hover{
   background-color:#da1b3d;
 }
 
-.Homepage:active,.Menu_list:active, .About_us:active, .Location:active{
+#Homepage:active,#Menu_list:active, #About_us:active, #Location:active{
   transition: 1ms;
   background-color: rgba(0, 0, 0, 0.63);
 }
 
-.rec-1.click{
+#rec-1.click{
   transform: translateY(200%) rotate(45deg);
   background-color: white ;
 }
 
-.rec-3.click{
+#rec-3.click{
   transform: translateY(-200%) rotate(-45deg);
   background-color: white ;
 }
 
-.rec-2.click{
+#rec-2.click{
   transform:scaleX(0);
   background-color: white ;
 }
 
-.rec-1,.rec-2,.rec-3{
-  transition: .5s ease-in-out;
-}
 
-.rec-1,.rec-2,.rec-3{
+
+#rec-1,#rec-2,#rec-3{
+  transition: .5s ease-in-out;
   position: relative;
   background-color: black ;
   height: 20%;

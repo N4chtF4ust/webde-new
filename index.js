@@ -106,17 +106,10 @@ center3.forEach(label => {
       span.classList.toggle("click");
       label4.classList.toggle("click");
     }
-   
+ 
   });
 });
   
-  
-    
-
-   
-
-
-
 //-----------------------------------
 //scrolling effect animation
 
@@ -131,9 +124,8 @@ let cloud2 = document.getElementById("cloud2");
 let cloud3 = document.getElementById("cloud3");
 let moon = document.getElementById("moon");
 
-
-
 window.addEventListener('scroll', () => {
+
   let value = window.scrollY;
   moon.style.marginTop = value * 1 + 'px';
   cloud1.style.left = value * -3+ 'px';
@@ -144,13 +136,5 @@ window.addEventListener('scroll', () => {
   obj3.style.marginBottom = value * -.5+ 'px';
   obj4.style.marginBottom = value * -.6+ 'px';
   mountain.style.marginBottom = value * -.3+ 'px';
-  
-
 
 });
-
-
-
-
-
-

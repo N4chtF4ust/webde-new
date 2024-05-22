@@ -2,26 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 body{
   font-family: "Freeman", sans-serif; 
-
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    background-color: #4a374b;
-   
-   
-   
-    
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: #4a374b;  
 }
 /*---------------------*/
 .homepage{
 
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row ;
-   
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row ;
 }
 
 .bg {
@@ -31,11 +25,7 @@ body{
   z-index: -1;
   overflow: hidden;
   background-color: #f9b69d;
-  
-  
-
 }
-
 
 .bg img {
   transition: .5s ease-in-out;
@@ -47,17 +37,18 @@ body{
   height: 11vh;
   width: 100vw;
   z-index: 3;
-  
- 
 }
+
 #obj1,#obj2,#obj3,#obj4,#Mountain{
   bottom: 10vh;
 }
+
 #obj1{
   position: absolute;
   width: 25vw;
   left: 5vw;
 }
+
 #obj2{
   position: absolute;
   width: 10vw;
@@ -87,15 +78,14 @@ body{
   position: absolute;
   z-index: -2;
   top: 5vh;
- 
 }
 
 #cloud2{
   width: 30vw;
   position: absolute;
   z-index: -1;
- top: 25%;
- transform: translate(100%);
+  top: 25%;
+  transform: translate(100%);
 }
 
 #cloud3{
@@ -112,263 +102,207 @@ body{
   z-index: -2;
   top: 10vh;
   right: 30vw;
- 
 }
 
-
 .left_container{ 
-    width: 50vw; 
-    height: 100vh;
-    overflow: hidden;
-   
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
-  }
+  width: 50vw; 
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
-  .welcome{
-    text-transform: uppercase;
-    z-index: 1;
-    position:absolute;
-    left: 5%;
-    font-size: 2vw;
-    max-width: 70vw ;
-    max-height: 100vh;
-    
-    
-    
-    padding: 1%;
-    margin: 0;
-    line-height: 30%;
+.welcome{
+  text-transform: uppercase;
+  z-index: 1;
+  position:absolute;
+  left: 5%;
+  font-size: 2vw;
+  max-width: 70vw ;
+  max-height: 100vh;
+  padding: 1%;
+  margin: 0;
+  line-height: 30%;
+  z-index: 1;
+  text-shadow:  2px 2px 1px white;  
+}
 
-    z-index: 1;
+.welcome h1{
+  color: #a70000 ;
+  position: relative;
+}
 
-    text-shadow:  2px 2px 1px white;
-   
-    
-  }
+.welcome h4,.welcome h6{
+  color: black;  
+  position: relative;
+}
 
-  .welcome h1{
-
-    color: #a70000 ;
-    position: relative;
-   
-  }
-
-  .welcome h4,.welcome h6{
-
-    color: black;
-    
-    position: relative;
-   
-   
-  }
-
-  .welcome h6{
-    color: black;
-    
-  }
+.welcome h6{
+  color: black;
+}
 
 .right_container{
- 
-    display: flex;
-    overflow: hidden;
-    width: 50vw;
-    height: 100vh;
-    
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
+  display: flex;
+  overflow: hidden;
+  width: 50vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
 
-   
-   
-   
+.nav_header{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 25vw;
+  height: 100vh;
+  right:-60%;
+  background-color: rgba(0, 0, 0, 0.342); 
+  backdrop-filter: blur(5px) ;
+  font-size: 1vh; 
+  color: white;
+  z-index: 2;
+  transition: .5s ease-in-out;
+}
+
+.Homepage,.Menu_list, .About_us, .Location{
+  justify-content: center;
+  width: 97%;
+  display: flex;
+  padding: 1%;  
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.63);
+  margin-left: 3vw;
+  margin-right: 3vw;
+  cursor: pointer;
+}
+
+.container-for-square-icon{
+  width: 5vh;
+  height: 5vh;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  z-index: 3; 
+  animation: container-for-square-icon 5s ease;
+  cursor: pointer;
+}
+
+.square-icon{  
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  z-index: 1;
   }
 
-  .nav_header{
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    width: 25vw;
-    height: 100vh;
-    right:-60%;
-    background-color: rgba(0, 0, 0, 0.342); 
-    backdrop-filter: blur(5px) ;
-    font-size: 1vh; 
-    color: white;
-  
-    z-index: 2;
-    transition: .5s ease-in-out;
-    
-  }
+.container-for-square-icon.click:hover .rec-1.click , 
+.container-for-square-icon.click:hover .rec-3.click,
+.container-for-square-icon.click:hover .rec-2.click {
+  background-color: #da1b3d;
+}
 
-  .Homepage,.Menu_list, .About_us, .Location{
-    justify-content: center;
-    width: 97%;
-    display: flex;
-    padding: 1%;  
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.63);
-    margin-left: 3vw;
-    margin-right: 3vw;
-    cursor: pointer;
-  }
+.nav_header.click{
+  right: 0;
+}
 
-  .container-for-square-icon{
-    width: 5vh;
-    height: 5vh;
-    position: fixed;
-    top: 5%;
-    right: 5%;
-    display: flex;
-    z-index: 3; 
-    animation: container-for-square-icon 5s ease;
-    cursor: pointer;
-  }
-
-  .square-icon{  
-   
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    z-index: 1;
-    
-  }
-
-  .container-for-square-icon.click:hover .rec-1.click , 
-  .container-for-square-icon.click:hover .rec-3.click,
-  .container-for-square-icon.click:hover .rec-2.click {
-    background-color: #da1b3d;
-    
-  }
-
-  
-  .nav_header.click{
-    right: 0;
-  }
-
-  .Homepage:hover,.Menu_list:hover, .About_us:hover, .Location:hover{
+.Homepage:hover,.Menu_list:hover, .About_us:hover, .Location:hover{
   background-color:#da1b3d;
- 
-  
 }
 
 .Homepage:active,.Menu_list:active, .About_us:active, .Location:active{
   transition: 1ms;
   background-color: rgba(0, 0, 0, 0.63);
-  
 }
-
-
 
 .rec-1.click{
-    transform: translateY(200%) rotate(45deg);
-    background-color: white ;
+  transform: translateY(200%) rotate(45deg);
+  background-color: white ;
 }
-    
-
 
 .rec-3.click{
   transform: translateY(-200%) rotate(-45deg);
   background-color: white ;
-
- 
 }
 
 .rec-2.click{
   transform:scaleX(0);
   background-color: white ;
-
- 
 }
 
 .rec-1,.rec-2,.rec-3{
   transition: .5s ease-in-out;
 }
 
-  .rec-1,.rec-2,.rec-3{
-    position: relative;
-    background-color: black ;
-   
-    height: 20%;
-   
-    border-radius: 10px;
-  }
+.rec-1,.rec-2,.rec-3{
+  position: relative;
+  background-color: black ;
+  height: 20%;
+  border-radius: 10px;
+}
 
- .Logo{
+.Logo{
   display: flex;
-  position: absolute;
-  
+  position: absolute; 
   width: 30%;
   align-items:center;
   justify-content: center ;
-  
   overflow: hidden;
   border-radius: 15px;
-
   box-shadow: 2px 2px 1px black;
+}
 
- 
-  
- }
-
- .Logo img{
+.Logo img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  }
+}
   
-  .contacts{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
-    position: absolute;
-    bottom: 5%;
-    height: 10%;
-    gap: 10%;
-    
-  }
-    .contacts img{
-      width: 8%;
-      border-radius: 10px;
-      padding: 1%;
-      position:relative;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.63);
-      border: 1px solid white;
-      transition: .5s ease-in-out;
-    }
-  
-    .contacts img:hover{
-      background:#da1b3d;
-    }
-  
+.contacts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  height: 10%;
+  gap: 10%;
+}
+.contacts img{
+  width: 8%;
+  border-radius: 10px;
+  padding: 1%;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.63);
+  border: 1px solid white;
+  transition: .5s ease-in-out;
+}
 
+.contacts img:hover{
+  background:#da1b3d;
+}
 /*---------------------*/
 /*Foodlist*/
 .foodlist{
- 
   width: 100vw;
   height: 100vh;
-
   display: flex;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
   padding: 5%;
- 
 }
 
 .flex-header{
@@ -381,8 +315,6 @@ body{
   align-items: center;
   gap: 3%;
   padding:1%;
-
-  
 }
 
 .menu {
@@ -398,9 +330,6 @@ body{
   align-items: center;
 }
 
-
-
-
 .menu{
   max-width: 100%;
   max-height: 100%;
@@ -408,20 +337,12 @@ body{
 
 .rectangle-background{
   margin: 0;
- 
-  /*background-color: rgba(0, 0, 0, 0.63);
-  backdrop-filter: blur(10px) ;*/
- 
   display: flex;
   flex-direction: column;
   width: 90vw;
   height: 90vh; 
-
   border-top: 3px solid white;
   border-bottom: 3px solid white;
- 
- /* border-radius: 40px; */
-  
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -460,18 +381,14 @@ body{
 }
 
 .carousel-wrapper input {
- display: none;
+  display: none;
 }
 
 .carousel {
   height: 98%;
   width: 100%;
-
- 
- 
   border-radius: 15px;
   overflow: hidden;
-  
   cursor: pointer;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   z-index: 1;
@@ -479,12 +396,10 @@ body{
 
 .carousel:hover{
   transform: scale(1.05);
-  
   transition: .1s ease-in-out;
 }
 
 .carousel ul {
- 
   position: relative;
   list-style: none;
   overflow: hidden;
@@ -537,7 +452,6 @@ body{
 
 #slide11:checked ~ .carousel ul {
   left: -1000%;
- 
 }
 
 .right-arrow,.left-arrow {
@@ -620,64 +534,64 @@ body{
   display:block;
 }
 
-  .nav-dot {  
-    cursor: pointer; 
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    display: flex;
-    flex-direction: row;
-    bottom: 0;
-    padding: 0;
-    left: 50%; 
-    transform: translateX(-50%); 
-    border:1px solid white;
-    border-radius: 50%;
-  }
+.nav-dot {  
+  cursor: pointer; 
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  padding: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+  border:1px solid white;
+  border-radius: 50%;
+}
 
-  .nav-dot[for=slide1] {
-    left: 0;
-  }
+.nav-dot[for=slide1] {
+  left: 0;
+}
 
-  .nav-dot[for=slide2] {
-    left: 10%;
-  }
+.nav-dot[for=slide2] {
+  left: 10%;
+}
 
-  .nav-dot[for=slide3] {
-    left: 20%;
-  }
+.nav-dot[for=slide3] {
+  left: 20%;
+}
 
-  .nav-dot[for=slide4] {
-    left: 30%;
-  }
+.nav-dot[for=slide4] {
+  left: 30%;
+}
 
-  .nav-dot[for=slide5] {
-    left: 40%;
-  }
+.nav-dot[for=slide5] {
+  left: 40%;
+}
 
-  .nav-dot[for=slide6] {
-    left: 50%;
-  }
+.nav-dot[for=slide6] {
+  left: 50%;
+}
 
-  .nav-dot[for=slide7] {
-    left: 60%;
-  }
+.nav-dot[for=slide7] {
+  left: 60%;
+}
 
-  .nav-dot[for=slide8] {
-    left: 70%;
-  }
+.nav-dot[for=slide8] {
+  left: 70%;
+}
 
-  .nav-dot[for=slide9] {
-    left: 80%;
-  }
+.nav-dot[for=slide9] {
+  left: 80%;
+}
 
-  .nav-dot[for=slide10] {
-    left: 90%;
-  }
+.nav-dot[for=slide10] {
+  left: 90%;
+}
 
-  .nav-dot[for=slide11] {
-    left: 100%;
-  }
+.nav-dot[for=slide11] {
+  left: 100%;
+}
 
 #slide1:checked ~ .nav-dot[for="slide1"],
 #slide2:checked ~ .nav-dot[for="slide2"],
@@ -693,20 +607,10 @@ body{
   background-color:#da1b3d;
 }
 
-
-
-
-
-
-
-
-
 /*---------------------*/
 .about_us{
-   
     width: 100vw;
     height: 100vh;
-   
 }
 
 .flex-header3{
@@ -719,9 +623,6 @@ body{
   align-items: center;
   gap: 3%;
   padding:1%;
-  
-
-  
 }
 
 .menu3 {
@@ -745,10 +646,8 @@ body{
 }
 
 .rectangle-background3{
-
   border-top: 3px solid white;
   border-bottom: 3px solid white;
- 
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -763,11 +662,7 @@ body{
   overflow: hidden;
   padding-top: 1%;
   padding-bottom: 1%;
- 
 }
-
-
-
 
 .center3{
   position: relative;
@@ -829,7 +724,6 @@ body{
 
 }
 
-
 .center3 label span{
 transform: rotate(90deg);
 transition: .5s ease-in-out;
@@ -845,9 +739,8 @@ transition: .5s ease-in-out;
 
 /*---------------------*/
 .location{
- 
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .flex-header2{
@@ -861,7 +754,6 @@ transition: .5s ease-in-out;
   gap: 3%;
   padding:1%;
   
-
   
 }
 
@@ -878,72 +770,46 @@ transition: .5s ease-in-out;
   align-items: center;
 }
 
-
-
 .menu2{
   max-width: 100%;
   max-height: 100%;
 }
 
 .rectangle-background2{
-  
-  
-  /*background-color: rgba(0, 0, 0, 0.63);
-  backdrop-filter: blur(10px) ;*/
-
   border-top: 3px solid white;
   border-bottom: 3px solid white;
- 
   display: flex;
   flex-direction: column;
   width: 90vw;
   height: 90vh; 
- 
-  /*border-radius: 40px; */
-
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-
-  
-  
   justify-content: center;
   align-items: center;
   overflow: hidden;
   padding-top: 1%;
   padding-bottom: 1%;
- 
 }
-
-
-
 
 .center2{
   position: relative;
   display: flex;
   margin:0;
   width: 40%;
-  height: 90%;
-    
+  height: 90%;  
   margin: 0;
-
-
-  
- 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    
-  
- 
 }
 
 .location2{
-    
-    width: 90vw;
-    height: 95%;
-    
+  
+  width: 90vw;
+  height: 95%;
+  
 }
 
 .Footer{
@@ -956,93 +822,87 @@ transition: .5s ease-in-out;
   align-items: center;
   justify-content: center;
   font-size: 2vh;
- 
+
 }
 
 
 /*Responsive*/
 
 @media screen and (max-width: 768px )  {
+/*Homepage*/
+.left_container{
+  display: none;
+}
 
+.right_container{
+  width: 100vw;
+}
+.nav_header{
+  width: 50vw;
+}
 
+.Logo{
+  width: 60%;
+}
 
-  /*Homepage*/
-  .left_container{
-    display: none;
+.contacts img{
+  width: 15%;
+}
+
+/*------------------------*/
+
+/*Food list*/
+
+.center {
+  width: 90%;
+}
+.back {
+  width: 30%;
+}
+.menu {
+  width: 80%;
+}
+.menu h2 {
+  font-size: 1.3vh;
+}
+.nav-dot {
+  width: 5px;
+  height: 5px;
+}
+
+/*-------------------------*/
+
+/*location*/
+.center2 {
+  width: 90%;
+}
+
+.menu2 {
+  width: 80%;
+}
+.menu2 h2 {
+  font-size: 1.3vh;
+}
+
+/*--------------------*/
+
+/*about us*/
+.center3 {
+  width: 90%;
   }
 
-  .right_container{
-    width: 100vw;
-  }
-  .nav_header{
-    width: 50vw;
-  }
-
-  .Logo{
-    width: 60%;
-  }
-
-  .contacts img{
-    width: 15%;
-  }
-
-  /*------------------------*/
-
-  /*Food list*/
-
-  .center {
-    width: 90%;
-  }
-  .back {
-    width: 30%;
-  }
-  .menu {
-    width: 80%;
-  }
-  .menu h2 {
-    font-size: 1.3vh;
-  }
-  .nav-dot {
-    width: 5px;
-    height: 5px;
-  }
-
-  /*-------------------------*/
-
-   /*location*/
-   .center2 {
-    width: 90%;
-  }
- 
-  
-  .menu2 {
-    width: 80%;
-  }
-  .menu2 h2 {
-    font-size: 1.3vh;
-  }
- 
-  
-
-  /*--------------------*/
-
-     /*about us*/
-     .center3 {
-      width: 90%;
-    }
-   
-    
-    .menu3 {
-      width: 80%;
-    }
-    .menu3 h2 {
-      font-size: 1.3vh;
-    }
+.menu3 {
+  width: 80%;
+}
+.menu3 h2 {
+  font-size: 1.3vh;
+}
 }
 
 /*phone landscape*/
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
+  
 
   /*-----------*/
   /*Homepage*/
@@ -1071,43 +931,42 @@ transition: .5s ease-in-out;
   }
 
   /*--------------------*/
-     /*location*/
-     
-     .center2 {
-      width: 30%;
-    }
-    
-    .menu2 {
-      width: 30%;
-    }
-    .menu2 h2 {
-      font-size: 1.3vh;
-    }
-    
+  /*location*/
   
-    /*--------------------*/
+  .center2 {
+    width: 30%;
+  }
+  
+  .menu2 {
+    width: 30%;
+  }
+  .menu2 h2 {
+    font-size: 1.3vh;
+  }
+  
 
-     /*about us*/
-     
-     .center3 {
-      width: 30%;
-      font-size: 2vh;
-    }
-    
-    .menu3 {
-      width: 30%;
-    }
-    .menu3 h2 {
-      font-size: 1.3vh;
-    }
+  /*--------------------*/
 
-      /*Foodlist*/
-  .left_container{
-    display: none;
+  /*about us*/
+  .center3 {
+    width: 30%;
+    font-size: 2vh;
+  }
+  
+  .menu3 {
+    width: 30%;
+  }
+  .menu3 h2 {
+    font-size: 1.3vh;
   }
 
+    /*Foodlist*/
+.left_container{
+  display: none;
+}
+
   .Logo{
-   width: 20vw;
+  width: 20vw;
   }
 
   /*About us*/
@@ -1119,10 +978,7 @@ transition: .5s ease-in-out;
   }
     
 
- 
 }
-
-
 
 /* Tablet Portrait and Landscape */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1130,7 +986,6 @@ transition: .5s ease-in-out;
   .contacts img{
     width: 10%;
   }
-
 
   /*--------------------*/
   /*Foodlist*/
@@ -1158,7 +1013,7 @@ transition: .5s ease-in-out;
   .center2 {
     width: 70%;
   }
- 
+
   .menu2 {
     width: 45%;
   }
@@ -1173,7 +1028,7 @@ transition: .5s ease-in-out;
   .center3 {
     width: 70%;
   }
- 
+
   .menu3 {
     width: 45%;
   }
@@ -1181,60 +1036,58 @@ transition: .5s ease-in-out;
     font-size: 1.5vh;
   }
 
-
- 
 }
 
 /* Tablet Landscape */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-  /*--------------------*/
+/*--------------------*/
 
-  /*Foodlist*/
-  .center {
-    width: 30%;
-  }
-  .back {
-    width: 10%;
-  }
-  .menu {
-    width: 40%;
-  }
-  .menu h2 {
-    font-size: 1.5vh;
-  }
+/*Foodlist*/
+.center {
+  width: 30%;
+}
+.back {
+  width: 10%;
+}
+.menu {
+  width: 40%;
+}
+.menu h2 {
+  font-size: 1.5vh;
+}
 
-  /*--------------------*/
+/*--------------------*/
 
-  /*location*/
+/*location*/
 
-  .center2 {
-    width: 30%;
-  }
- 
-  .menu2 {
-    width: 40%;
-  }
-  .menu2 h2 {
-    font-size: 1.5vh;
-  }
+.center2 {
+  width: 30%;
+}
 
-   /*--------------------*/
+.menu2 {
+  width: 40%;
+}
+.menu2 h2 {
+  font-size: 1.5vh;
+}
 
-  /*about us*/
+/*--------------------*/
 
-  .center3 {
-    width: 30%;
-  }
- 
-  .menu3 {
-    width: 40%;
-  }
-  .menu3 h2 {
-    font-size: 1.5vh;
-  }
+/*about us*/
 
- 
+.center3 {
+  width: 30%;
+}
+
+.menu3 {
+  width: 40%;
+}
+.menu3 h2 {
+  font-size: 1.5vh;
+}
+
+
 }
 
 /* Desktop */
@@ -1262,7 +1115,7 @@ transition: .5s ease-in-out;
   .center2 {
     width: 40%;
   }
- 
+
   .menu2 {
     width: 45%;
   }
@@ -1270,12 +1123,12 @@ transition: .5s ease-in-out;
     font-size: 1.5vh;
   }
 
-   /*About us*/
+  /*About us*/
 
-   .center3 {
+  .center3 {
     width: 40%;
   }
- 
+
   .menu3 {
     width: 45%;
   }
@@ -1300,7 +1153,7 @@ transition: .5s ease-in-out;
     width: 60%;
   }
 
-    /*--------------------*/
+  /*--------------------*/
   /*About us*/
   .center3 {
     width: 60%;
